@@ -1,0 +1,34 @@
+{
+  "name": "travecto-monorepo",
+  "version": "1.0.0",
+  "description": "Travecto - Assistente Inteligente de Planejamento de Viagens com LangGraph, RAG Vetorial e MCP",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --parallel",
+    "dev:backend": "npm run dev --workspace=@travecto/backend",
+    "dev:frontend": "npm run dev --workspace=@travecto/frontend",
+    "build": "npm run build --workspaces",
+    "build:backend": "npm run build --workspace=@travecto/backend",
+    "build:frontend": "npm run build --workspace=@travecto/frontend",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "keywords": [
+    "travecto",
+    "langgraph",
+    "rag",
+    "mcp",
+    "clean-architecture",
+    "typescript",
+    "travel-planner"
+  ],
+  "author": "Travecto Core Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
+
